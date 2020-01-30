@@ -16,7 +16,8 @@ module.exports = {
 				'20': '5rem',
 				'30': '7.5rem',
 				'32': '7.9rem',
-				'35': '8.875rem'
+				'35': '8.875rem',
+				showIcons: '-11rem'
 			}
 		}
 	},

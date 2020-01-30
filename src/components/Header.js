@@ -19,7 +19,7 @@ const Header = ({ className }) => {
 					/>
 				</a>
 			</div>
-			<div className="flex justify-between items-center px-4 py-3 bg-navbar shadow-md">
+			<div className="flex justify-between items-center px-4 py-3 bg-navbar shadow-md sm:px-8 lg:justify-start">
 				<div>
 					<a href="https://colorsinspo.com">
 						<img
@@ -29,7 +29,36 @@ const Header = ({ className }) => {
 						/>
 					</a>
 				</div>
-				<Navbar />
+				<div className="flex ml-8">
+					<div className="hidden mx-8 sm:flex sm:items-center lg:order-last">
+						<svg
+							className="h-4 w-4 fill-current text-gray-600"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+						>
+							<path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+						</svg>
+						<input
+							className="w-64 ml-4 outline-none bg-transparent focus:text-gray-700"
+							placeholder="Type color hex or color name"
+						/>
+					</div>
+					<Navbar />
+				</div>
+				<div className="hidden ml-auto lg:block">
+					<a href="/" className="px-4 font-semibold text-gray-800 hover:text-primary">
+						Our plugins
+					</a>
+					<a href="/" className="px-4 font-semibold text-gray-800 hover:text-primary">
+						Newsletter
+					</a>
+					<a href="/" className="px-4 font-semibold text-gray-800 hover:text-primary">
+						Tweet
+					</a>
+					<a href="/" className="px-4 font-semibold text-primary">
+						Play color games
+					</a>
+				</div>
 			</div>
 		</header>
 	);
