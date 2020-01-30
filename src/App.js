@@ -14,7 +14,7 @@ function App() {
 				</p>
 				<div className="sm:flex sm:flex-wrap">
 					{Array.from({ length: 10 }, () => (
-						<div className="sm:w-1/2 sm:px-2 md:w-1/3 lg:w-1/4">
+						<div className="max-w-xs sm:w-1/2 sm:px-2 md:w-1/3 lg:w-1/4">
 							<Card />
 						</div>
 					))}
