@@ -8,8 +8,10 @@ function App() {
 		<div className="App flex flex-col h-screen">
 			<Header className="z-10" />
 			<main className="px-4 py-12 overflow-y-auto bg-content appearance-none lg:px-24">
-				<h1 className="text-gray-900 text-4xl font-medium leading-tight">Latest Color Palettes</h1>
-				<p className="mt-2 text-gray-700 font-semibold text-sm">
+				<h1 className="text-gray-900 text-4xl font-medium tracking-wider leading-tight">
+					Latest Color Palettes
+				</h1>
+				<p className="mt-2 text-gray-600 font-semibold text-sm">
 					Thousands of beautiful color palettes you can use it directly by one click.
 				</p>
 				<div className="sm:flex sm:flex-wrap sm:-mx-2">
