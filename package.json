@@ -12,8 +12,8 @@
 		"react-scripts": "3.3.0"
 	},
 	"scripts": {
-		"build:css": "postcss src/tailwind.css -o src/index.css --env production",
-		"watch:css": "postcss src/tailwind.css -o src/index.css -w",
+		"build:css": "postcss src/css/tailwind.css -o src/css/index.css --env production",
+		"watch:css": "postcss src/css/tailwind.css -o src/css/index.css -w",
 		"start:js": "react-scripts start",
 		"start": "npm-run-all -p watch:css start:js",
 		"build": "npm run build:css && react-scripts build",
@@ -23,16 +23,8 @@
 		"extends": "react-app"
 	},
 	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
+		"production": [ ">0.2%", "not dead", "not op_mini all" ],
+		"development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
 	},
 	"devDependencies": {
 		"@fullhuman/postcss-purgecss": "^2.0.5",

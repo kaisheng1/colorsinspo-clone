@@ -5,9 +5,9 @@ import Card from './components/Card';
 
 function App() {
 	return (
-		<div className="App">
-			<Header />
-			<main className="min-h-screen mt-32 px-4 py-12 bg-content">
+		<div className="App flex flex-col h-screen">
+			<Header className="z-10" />
+			<main className="px-4 py-12 overflow-y-auto bg-content appearance-none">
 				<h1 className="text-gray-900 text-4xl font-medium leading-tight">Latest Color Palettes</h1>
 				<p className="mt-2 text-gray-700 font-semibold text-sm">
 					Thousands of beautiful color palettes you can use it directly by one click.

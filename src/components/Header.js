@@ -2,9 +2,9 @@ import React from 'react';
 
 import Navbar from './Navbar';
 
-const Header = () => {
+const Header = ({ className }) => {
 	return (
-		<header className="fixed w-full top-0 left-0 z-10">
+		<header className={className}>
 			<div className="flex justify-center bg-header">
 				<a
 					className="my-2"
@@ -13,7 +13,7 @@ const Header = () => {
 					rel="noopener noreferrer"
 				>
 					<img
-						className="h-full w-full"
+						className="h-full max-w-full"
 						src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=179549&amp;theme=light"
 						alt="Colorsinspo - All in one resource for finding everything about colors | Product Hunt Embed"
 					/>

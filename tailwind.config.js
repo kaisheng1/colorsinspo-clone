@@ -2,7 +2,8 @@ module.exports = {
 	theme: {
 		extend: {
 			height: {
-				'50': '12.5rem'
+				'50': '12.5rem',
+				screen85: '85vh'
 			},
 			colors: {
 				header: '#da552f',
