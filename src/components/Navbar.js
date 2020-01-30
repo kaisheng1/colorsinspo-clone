@@ -8,7 +8,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="relative">
+		<div className="">
 			<svg
 				onClick={toogleOpen}
 				className="w-6 h-6 fill-current text-primary"
@@ -20,7 +20,7 @@ const Navbar = () => {
 				<path d="M3 18H21" stroke="#646464" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 			</svg>
 			{isOpen && (
-				<div className="absolute right-0 w-64 bg-navbar">
+				<div className="absolute top-32 right-0 w-64 bg-navbar">
 					<div className="flex justify-between px-8 py-4 border-l-8 border-primary bg-blue-100">
 						<span className="-ml-2 font-semibold text-primary">Color Palettes</span>
 						<svg
